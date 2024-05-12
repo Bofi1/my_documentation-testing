@@ -22,7 +22,7 @@ los eb123bb son ejemplo de numero de commit
 --el historial es de abajo hacia arriba--
 
 git log (ver historial de los commits)
-git log --stat (ver el status de los commit como que se modifico y mas especifico)
+git log --stat (ver el status de los commit como que se modifico y mas especificos)
 git log --online (ver en una sola fila los commits echos, con su descripcion nomas)
 git log --graph (muestra una tipo grafica de los commits)
 git diff (muestra la diferencia entre el commit pasado y lo que acabamos de editar)
