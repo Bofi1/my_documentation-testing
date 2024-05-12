@@ -1,0 +1,78 @@
+git branch -m [nombre_nuevo] (cambias el nombre de la branch)
+
+git --v (version de git)
+git init (crear un repositorio)
+git config --global user.name "nombre" (crear un usuario)
+git config --global user.email "email" (poner email)
+
+
+-- staying index (archivos listos antes de mandar a una nueva version "commit") un paso antes de hacer commit --
+
+-- .gitignote (archivo donde git ignora los nombre o dominios para el statying index)
+
+git status (saber los archivos que estan sin trackear para mandar al staying index)
+git add archivo.txt (esto es para mandar al staying index) "cuando esta en verde ya esta en el satying index"
+git add . (mandar todos los archivos al staying index)
+git rm --cached archivo.txt (eliminar archivos del staying index)
+git commit -m "descripcion" (crear una nueva version "commit")
+
+--------------------------------------------------------------------------------
+los eb123bb son ejemplo de numero de commit
+
+--el historial es de abajo hacia arriba--
+
+git log (ver historial de los commits)
+git log --stat (ver el status de los commit como que se modifico y mas especifico)
+git log --online (ver en una sola fila los commits echos, con su descripcion nomas)
+git log --graph (muestra una tipo grafica de los commits)
+git diff (muestra la diferencia entre el commit pasado y lo que acabamos de editar)
+git diff eb123bb et6745 (se compara el primer archivo con el ultimo (que hay diferente de lo ultimo?))
+git checkout eb123bb (te regresa al commits pasados, si no haces ramas no puedes regresar a commit futuros) 
+
+-----------------------------------------------------------------------------------
+RAMAS
+
+git branch (mostrar ramas que tienes actualmente)
+git checkout -b nombreDeLaRama (crear una nueva rama)
+git checkout nombreDeLaRama (cambiarte de rama)
+
+git branch -d (tienes que estar dentro de la rama que quieras eliminar)
+
+git merge main nombreDeLaRamaAmezclar (tienes que estar dentro de main para hacerlo bien)
+------------------------------------------------------------------------------------
+
+git remote add origin https://github.com/Bofi1/course.git (agregar repositorio remoto(de github) "la url es la del repositorio en github") (origin es el github como si fuera main de nosotros)
+git push -u origin main (mandos lo de git(main) a origin(github))
+git remote remove origin (si la cagaste haciendo el origin)
+
+git push (ahi ya todo se va para github unavez hecho el push anterior)
+git pull origin main (jalamos de github a git)
+
+-------------------------------------------------------------------------------------
+git clone URL (clonar repositorios) y tiene que hacerlo dentro de la carpeta quieras todo eso
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+GIT ALIAS
+
+git config --global alias.[nombre de q le vas a poner] "[comandode git]"
+ej.
+git config --global alias.tree "log graph --decorate --all oneline"
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+SSH 
+
+ls -al ~/.ssh  (ver si tienes una clave existente) si te aparece q tienes una y quieres usar esa nomas busca el archivo .pub y ya la pones en new ssh en github y listos
+
+ssh-keygen -t ed25519 -C "your_email@example.com"   (crear una ssh o nueva ssh) ahuevo tiene que ser tu correo de github, una vez creado buscas el archivo .pub y ya new ssh en github y listo
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+YORK
+
+- en github te va a un repositorio ajeno y le aplastas en york, esto te hace una copia del
+repositorio ajeno y nomas picandole a SYNC YORK estara sincronizados con la misma info
+
+- una vez hagas un commit y quieras contribuir en el repositorio ajeno, en el tuyo nomas le aplatas CONTRIBBUTE y ya nomas esperas que el te lo acepte
