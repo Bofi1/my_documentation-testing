@@ -74,8 +74,62 @@ console.log(Boolean(100)) // = true
 // -------------------------- strings -------------------------- //
 
 " "  ' '  ``    // forma de hacer un string
+
 typeof          // este devuelve que tipo de variable es (number, string, object, undefined, etc)
+
 str1 + str2     // concatenar strings    
+
+
+
+
+
+
+
+// -------------------------- condicionales -------------------------- //
+
+
+if(){       // if (si se cumple esto pasa esto)
+
+}      
+
+
+if(){       // if else (si se cumple esto pasa esto, sino, pasa esto)
+
+} else{
+
+}
+
+
+if(){       // else if (si se cumple esto pasa esto, sino, pasa esto, sino, pasa esto)
+
+} else if{
+
+} else {
+
+}
+
+
+condición ? expr1 : expr2   // ternario (version simple de if)
+//   if     {   }   else
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
