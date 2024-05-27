@@ -517,6 +517,13 @@ num => num * 5;
      }
      setTimeout(func, 3000);
      console.log('Another log message.');   // aqui se muestra como usar el SetTimeOut correctamente (primero se ejecuta el console.log y despues el setTimeout)
+
+     // ------- callback -------------- // 
+    // (no se entendio muy  bien pero se dejara un link donde se explique mejor)
+
+
+         // ------- promesas -------------- // 
+    // (no se entendio muy  bien pero se dejara un link donde se explique mejor)
     
 
 
