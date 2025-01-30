@@ -6,6 +6,20 @@ git config --global user.name "nombre" (crear un usuario)
 git config --global user.email "email" (poner email)
 
 
+--------------------------------------------------------------------------------
+
+IMPORTANTEEEEEEEEEE
+
+git remote add origin https://github.com/Bofi1/course.git (agregar repositorio remoto(de github) "la url es la del repositorio en github") (origin es el github como si fuera main de nosotros)
+git push -u origin main (mandos lo de git(main) a origin(github))
+git remote remove origin (si la cagaste haciendo el origin)
+
+git push (ahi ya todo se va para github unavez hecho el push anterior)
+git pull origin main (jalamos de github a git)
+
+--------------------------------------------------------------------------------
+
+
 -- staying index (archivos listos antes de mandar a una nueva version "commit") un paso antes de hacer commit --
 
 -- .gitignote (archivo donde git ignora los nombre o dominios para el statying index)
@@ -17,6 +31,7 @@ git rm --cached archivo.txt (eliminar archivos del staying index)
 git commit -m "descripcion" (crear una nueva version "commit")
 
 --------------------------------------------------------------------------------
+
 los eb123bb son ejemplo de numero de commit
 
 --el historial es de abajo hacia arriba--
@@ -40,13 +55,6 @@ git branch -d (tienes que estar dentro de la rama que quieras eliminar)
 
 git merge main nombreDeLaRamaAmezclar (tienes que estar dentro de main para hacerlo bien)
 ------------------------------------------------------------------------------------
-
-git remote add origin https://github.com/Bofi1/course.git (agregar repositorio remoto(de github) "la url es la del repositorio en github") (origin es el github como si fuera main de nosotros)
-git push -u origin main (mandos lo de git(main) a origin(github))
-git remote remove origin (si la cagaste haciendo el origin)
-
-git push (ahi ya todo se va para github unavez hecho el push anterior)
-git pull origin main (jalamos de github a git)
 
 -------------------------------------------------------------------------------------
 git clone URL (clonar repositorios) y tiene que hacerlo dentro de la carpeta quieras todo eso
