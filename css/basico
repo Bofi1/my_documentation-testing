@@ -1,0 +1,36 @@
+width/height - ancho y altura
+max-width/height - maximo que va a tener un elemento
+
+margin - espacio FUERA del div
+border - entre el margin y padding
+padding - espacio DENTRO del div
+
+----------- position
+    relative - es para mover un elemento de forma normal (
+        position: relative;
+        left/top/bottom/right: 30px;
+    )
+
+    absolute - mover el elemento es base al elemento padre mas cercano que sea RELATIVE(
+        position: absolute;
+        left/top/bottom/right: 30px;
+    )
+
+    sticky - se parece al fixed pero juega con el scroll 
+        ((digamos que el div esta en x posicion por como ordenaste el html y al momento 
+        de tu escrolear, si al sticky le pusiste top:0px; cuando escrolees para abajo el div se quedara hasta arriba)
+        
+        div.sticky {
+            position: sticky;
+            top: 0;
+        )
+
+    static - elemento estatico
+    fixed - se queda tiezo aunq escrolees para cualquier lado
+-----------
+
+z-index - quien controloda que va arriba de que(a mayor numero es mas importante)
+
+overflow - se encarga de que hacer cuando un texto sobrepasa el tamaño de su contenedor(
+    overflow: visible/hidden/scroll/auto;
+)
