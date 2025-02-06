@@ -69,6 +69,7 @@ pseudo-classes --> selector::pseudo-classes
       -----> ~A quote in a paragraph~
       -----> y no se puede seleccionar los "~"
 
+------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -81,3 +82,30 @@ pseudo-elements --> selector::pseudo-elements
 
     -::marker ---> siempre va sin ningun selector asi solo y de da estilos a las <li>
     -::selection ---> cuando seleccionas un texto este cambia de estilo
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+- dropdowns ---> usando :hover y luego lo que quieres mostrar. ej. 
+    div:hover .hola{
+        display:block;
+        width:200px;
+        height:100px;
+    }
+
+cuando se haga hover en el div se mostrara el hola
+    - puedes usar tanto para menus como para imagenes
+    - dropdown menu
+    - dropdown imagen
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+-forms
+-transitions
+
+-----> responsive
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
