@@ -5,7 +5,7 @@ margin - espacio FUERA del div
 border - entre el margin y padding
 padding - espacio DENTRO del div
 
------------ position
+----------- position --------------------------------------------------------------------------------------------------------------
     relative - es para mover un elemento de forma normal (
         position: relative;
         left/top/bottom/right: 30px;
@@ -27,7 +27,7 @@ padding - espacio DENTRO del div
 
     static - elemento estatico
     fixed - se queda tiezo aunq escrolees para cualquier lado
------------
+------------------------------------------------------------------------------------------------------------------------------------
 
 z-index - quien controloda que va arriba de que(a mayor numero es mas importante)
 
@@ -36,8 +36,23 @@ overflow - se encarga de que hacer cuando un texto sobrepasa el tamaño de su co
 )
 
 
------- inline/block/inline-block
+------ inline/block/inline-block ---------------------------------------------------------------------------------------------------
 
 inline - elemento en linea y acomoda los demas contenedores de forma horizontal (solo ocupa su tamaño original ya que no le puedes poner ni width ni height y permite posicionar otro contenedores a su lado)
 block - elemento abarca todo el espacio donde esta el elemento, poniendo los demas contenedores abajo de el y si permite width y height
 inline-block - combinacion de las 2 anteriores abarca solo su espacio y permite usar width y height
+------------------------------------------------------------------------------------------------------------------------------------
+
+como centrar alguno de lo mas usado es pero hay muchisimos mas
+display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+-------combinadores ---------------------------------------------------------------------------------------------------------------
+
+div p {} - selecciona todos los <p> que esten dentro del <div> en cualquier parte
+div > p {} - selecciona los elementos <p> que sean hijos del <div>
+div + p {} - selecciona los el PRIMER elemento <p> que este abajo del <div> pero q no este adrento del el
+div ~ p {} - selecciona a TODOS los elementos <p> que sean hermanos del <div> 
+------------------------------------------------------------------------------------------------------------------------------------
