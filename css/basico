@@ -56,3 +56,28 @@ div > p {} - selecciona los elementos <p> que sean hijos del <div>
 div + p {} - selecciona los el PRIMER elemento <p> que este abajo del <div> pero q no este adrento del el
 div ~ p {} - selecciona a TODOS los elementos <p> que sean hermanos del <div> 
 ------------------------------------------------------------------------------------------------------------------------------------
+
+pseudo-classes --> selector::pseudo-classes
+    -hover
+    -lang ---> ejemplo
+    q:lang(no) {
+        quotes: "~" "~";
+      }
+
+      <p>Some text <x lang="no">A quote in a paragraph</x> Some text.</p>
+
+      -----> ~A quote in a paragraph~
+      -----> y no se puede seleccionar los "~"
+
+
+
+
+pseudo-elements --> selector::pseudo-elements
+    -first-line
+    -first-letter
+    
+    -before ---> se pone antes de (y siempre lleva content:;)
+    -after ---> se pone despues de (y siempre lleva content:;)
+
+    -::marker ---> siempre va sin ningun selector asi solo y de da estilos a las <li>
+    -::selection ---> cuando seleccionas un texto este cambia de estilo
