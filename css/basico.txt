@@ -85,6 +85,9 @@ pseudo-elements --> selector::pseudo-elements
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
+float ---> posiciona a la izquierda o derecha un elemento
+    float:right/left;
+
 
 ------------------------------------------------------------------------------------------------------------------------------------
 - dropdowns ---> usando :hover y luego lo que quieres mostrar. ej. 
