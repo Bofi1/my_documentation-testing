@@ -118,7 +118,7 @@ cuando se haga hover en el div se mostrara el hola
 ------------------- unidades de medida ---------------------------------------------------------------------------------------------
 
 em - se basa en el font-size de su padre, si el font-size es 16px y ponemos 2em el hijo tendra un fontzise de 32px (1em)
-rem - se basa en el font-zise del root osea del body (1rem)
+rem - se basa en el font-zise del root que es 16px
 vw - se basa en el ancho de tamaño de la pantalla (10vw)
 vh - se basa en la altura de tamaño de la pantalla (10vh)
 ------------------------------------------------------------------------------------------------------------------------------------
