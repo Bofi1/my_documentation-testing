@@ -49,3 +49,98 @@ month = d.getMonth(); //10
 //estableces un año en especifico en la fecha
 const d = new Date();
 d.setFullYear(2020); // fecha y hora (2020-10-27T10:30:45.123Z)
+
+
+// -------- math ---------
+let r = Math.random(); // revuelve un numero random
+let x = math.max (10, 20); // revuelve el valor mas grande (osea 20)
+let x = Math.round(5.3); // revuelve el numero mas cercano al entero
+let x = Math.sqrt(9); // devuelve el numero elevado al cuadrado
+
+
+//---- if -----
+
+if (condition) {
+        
+} else {
+        
+}
+
+
+// ----- switch ----
+
+switch () {
+        case "banana":
+                alert("Hello")
+        break;
+
+        case 33:
+                alert("bienvenido")
+        break;
+
+        default:
+                alert("malcom el del medio")
+        break;
+}
+
+
+// ---- (FOR) bucle
+
+for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+        
+}
+
+
+// ---- (FOR OF) imprimir un array UNO POR UNO
+
+const fruits = ["Apple", "Banana", "Orange"];
+for (x of fruits) {
+  console.log(x);
+}
+
+// ----- (WHILE) repetir algo hasta que se cumpla una condicion
+
+let i = 0;
+while
+ (i < 10) {
+  console.log(i);
+  i++
+}
+
+
+// --- parar un bucle 
+break;
+
+        // para cuando i = 5
+        for (i = 0; i < 10; i++) { 
+                console.log(i);
+                if (i == 5) {
+                  break;
+                }
+              }
+
+
+// --- saltar a la siguiente interaccion
+continue;
+
+        for (i = 0; i < 10; i++) { 
+                console.log(i);
+                if (i == 5) {
+                  break;
+                }
+
+                console.log(i);
+              }
+
+// ---- event listener (en lugar de añadir el onclick y asi en el html)
+
+<button id="demo">Click me1</button>
+
+document.getElementById("demo")
+addEventListener("click", myFunction);
+
+
+
+
+
